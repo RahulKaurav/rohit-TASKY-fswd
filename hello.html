@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -28,7 +28,7 @@
         <div class="modal-body">
             <div class="mb-3">
                 <label for="imageurl" class="form-label">Image Url</label>
-                <input type="url" class="form-control" id="imageurl"placeholder="https://image.28784.hello.jpg" />
+                <input type="url" class="form-control" id="imageurl" placeholder="https://image.28784.hello.jpg" />
               </div>
               <div class="mb-3">
                 <label for="tasktitle" class="form-label">Task Title</label>
@@ -45,11 +45,43 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="savechanges()">Save changes</button>
+          <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
         </div>
       </div>
     </div>
-  </div>
+  </div> 
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="imageurl" class="form-label">Image Url</label>
+            <input type="url" class="form-control" id="imageurl" placeholder="http://example.com/image.png">
+          </div>
+          <div class="mb-3">
+            <label for="tasktile" class="form-label">Task Title</label>
+            <input type="text" class="form-control" id="tasktitle" placeholder="Learn Web Dev">
+          </div>
+          <div class="mb-3">
+            <label for="tasktype" class="form-label">Task Type</label>
+            <input type="text" class="form-control" id="tasktype" placeholder="Work">
+          </div>
+          <div class="mb-3">
+            <label for="taskdescription" class="form-label">Task Description</label>
+            <textarea rows="6" type="text" class="form-control" id="taskdescription" placeholder="type description here"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="saveChanges()" data-bs-dismiss="modal">Save changes</button>              data-bs-dismiss="modal"   is used to close the modal. copy this in save changes button and it be below or above the onclick="saveChanges()" .first browser will execute the onclick and then dismiss one 
+        </div>
+      </div>
+    </div>
+  </div>-->
     <!--navbar-->
     <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
         <div class="container-fluid">
@@ -92,7 +124,7 @@
                     <button type="button" class="btn btn-outline-success"><i class="fas fa-pencil-alt"></i></button>
                     <button type="button" class="btn btn-outline-danger"><i class="fas fa-trash"></i></button>
                 </div>
-                <img src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg" class="card-img-top" alt="anime-masked-boy-with-cat">
+                <img src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
