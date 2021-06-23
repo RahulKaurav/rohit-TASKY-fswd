@@ -17,6 +17,39 @@
     <title>Tasky</title>
 </head>
 <body>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="imageurl" class="form-label">Image Url</label>
+                <input type="url" class="form-control" id="imageurl"placeholder="https://image.28784.hello.jpg" />
+              </div>
+              <div class="mb-3">
+                <label for="tasktitle" class="form-label">Task Title</label>
+                <input type="text" class="form-control" id="tasktitle" placeholder="To-Do AI topics" />
+              </div>
+              <div class="mb-3">
+                <label for="tasktype" class="form-label">Task Tyke</label>
+                <input type="text" class="form-control" id="tasktype" placeholder="reading/development"/>
+              </div>
+              <div class="mb-3">
+                <label for="taskdescription" class="form-label">Task Description</label>
+                <textarea rows="4" class="form-control" id="taskdescription" placeholder="building + reading about AI"></textarea>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="savechanges()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <!--navbar-->
     <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
         <div class="container-fluid">
@@ -32,7 +65,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
             </ul>
-            <button type="button" class="btn btn-primary">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <i class="fas fa-plus"></i> Add New
             </button>
           </div>
@@ -52,14 +85,14 @@
       </section>
     <!--the card code-->
       <section>
-     <div class="row">
+     <div class="row task__container">
          <div class="col-md-6 col-lg-4">
             <div class="card">
                 <div class="card-header d-flex justify-content-end gap-2">
                     <button type="button" class="btn btn-outline-success"><i class="fas fa-pencil-alt"></i></button>
                     <button type="button" class="btn btn-outline-danger"><i class="fas fa-trash"></i></button>
                 </div>
-                <img src="https://www.gannett-cdn.com/presto/2018/11/30/USAT/90b536b7-dd4c-42a3-bf31-7d25dc636165-PAUL_WALKER.jpg" class="card-img-top" alt="paul-walker">
+                <img src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg" class="card-img-top" alt="anime-masked-boy-with-cat">
                 <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -74,8 +107,10 @@
     </section>
     </div>
         
-        <!--javascript link-->
+        <!--javascript bootstrap link-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!--our javascript file-->
+        <script src="index.js"></script>
 </body>
 </html>
