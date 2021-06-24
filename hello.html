@@ -19,7 +19,7 @@
 </head>
 <body>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -46,11 +46,94 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="saveChanges()" data-bs-dismiss="modal" >Save changes</button>
+          <button type="button" class="btn btn-primary" onclick="saveChanges()" data-bs-dismiss="modal">Save changes</button>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->   <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Image Url</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="imageUrl"
+                  aria-describedby="emailHelp"
+                  placeholder="https://example.com/hello.png"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Task Title</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="taskTitle"
+                  aria-describedby="emailHelp"
+                  placeholder="Learn Web Devlopment"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Task Type</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="taskType"
+                  aria-describedby="emailHelp"
+                  placeholder="Study"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Task Description</label
+                >
+                <textarea
+                  type="email"
+                  class="form-control"
+                  id="taskDesc"
+                  aria-describedby="emailHelp"
+                  placeholder="Describe the task in detail..."
+                  rows = 6
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button data-bs-dismiss="modal" onclick = "saveChanges()" type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--navbar-->
     <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
         <div class="container-fluid">
